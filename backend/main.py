@@ -6,9 +6,14 @@ from api.campaigns import router as campaigns_router
 from routes.webhook import router as webhook_router
 
 app = FastAPI()
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[os.getenv("FRONTEND_URL", "http://localhost:5173")],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

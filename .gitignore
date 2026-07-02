@@ -4,7 +4,8 @@ backend/.env
 .env.*
 
 # Python
-backend/venv/
+backend/.venv/
+.venv/
 __pycache__/
 *.pyc
 *.pyo
@@ -12,10 +13,10 @@ __pycache__/
 
 # Node
 frontend/node_modules/
-node_modules
+node_modules/
 
 # Build
-dist
+dist/
 dist-ssr
 
 # Logs
@@ -40,3 +41,5 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+# Environment
+.env
