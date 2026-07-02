@@ -3,6 +3,12 @@
 An AI-powered multi-tenant Voice SaaS platform that automates outbound lead qualification calls using Vapi AI, LangGraph, FastAPI, MongoDB Atlas, React, and Docker.
 
 ---
+Live Deployment
+Frontend: https://voice-ai-orchestrator-5.onrender.com/
+Backend API: https://voice-ai-orchestrator-2.onrender.com
+Swagger Documentation: https://voice-ai-orchestrator-2.onrender.com/docs#/default/vapi_webhook_webhooks_vapi_post
+
+The application is fully deployed and all backend APIs are accessible through the live backend and Swagger documentation. Due to the limitations of the Vapi AI free tier, outbound calls to Indian (+91) mobile numbers are not supported, preventing end-to-end testing with live phone calls. However, the complete webhook flow, LangGraph-based transcript evaluation, customer status updates, and database operations can be tested directly through the Swagger interface by submitting sample webhook payloads. This demonstrates the complete backend workflow even without live outbound calling support.
 
 ## Features
 
